@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Performance Dashboard</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>Student Performance Dashboard</h1>
+
+        <p>Dynamic Student Marks and Chart</p>
+
+    </header>
+
+
+    <!-- Main Content -->
+
+    <main>
+
+        <!-- Input Section -->
+
+        <div class="input-box">
+
+            <h2>Enter Student Details</h2>
+
+
+            <!-- Student Name -->
+
+            <div class="name-box">
+
+                <label>Student Name:</label>
+
+                <input
+                    type="text"
+                    id="studentName"
+                    value="Swapnil"
+                >
+
+            </div>
+
+
+            <!-- Marks -->
+
+            <h3>Enter Marks</h3>
+
+            <div class="marks-box">
+
+                <div>
+                    <label>Java</label>
+                    <input
+                        type="number"
+                        id="java"
+                        value="85"
+                    >
+                </div>
+
+
+                <div>
+                    <label>Python</label>
+                    <input
+                        type="number"
+                        id="python"
+                        value="90"
+                    >
+                </div>
+
+
+                <div>
+                    <label>DBMS</label>
+                    <input
+                        type="number"
+                        id="dbms"
+                        value="78"
+                    >
+                </div>
+
+
+                <div>
+                    <label>Web Development</label>
+                    <input
+                        type="number"
+                        id="web"
+                        value="88"
+                    >
+                </div>
+
+
+                <div>
+                    <label>Mathematics</label>
+                    <input
+                        type="number"
+                        id="maths"
+                        value="82"
+                    >
+                </div>
+
+            </div>
+
+
+            <!-- Update Button -->
+
+            <button onclick="updateData()">
+                Update
+            </button>
+
+        </div>
+
+
+        <!-- Result Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Student</h3>
+
+                <p id="nameDisplay">
+                    Swapnil
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Average Marks</h3>
+
+                <p id="average">
+                    84.60
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Highest Marks</h3>
+
+                <p id="highest">
+                    90
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Subjects</h3>
+
+                <p>
+                    5
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Chart -->
+
+        <div class="chart-box">
+
+            <h2>Subject-wise Marks</h2>
+
+            <canvas id="marksChart"></canvas>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            Student Performance Dashboard
+        </p>
+
+    </footer>
+
+
+    <!-- Connect JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
